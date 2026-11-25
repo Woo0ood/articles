@@ -3,6 +3,12 @@ description: 一些独立的分享页面。
 url: https://woo0ood.github.io
 baseurl: /articles
 lang: zh-CN
+og_locale: zh_CN
+image: /assets/images/remembering-a-person-amid-tabs/memory-galaxy.png
+image_alt: "Memory Galaxy：以你为圆心的记忆关系图"
+image_width: 4680
+image_height: 2788
+image_type: image/png
 timezone: Asia/Singapore
 markdown: kramdown
 kramdown:

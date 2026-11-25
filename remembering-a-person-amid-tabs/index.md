@@ -4,6 +4,10 @@ title: "如何在无数个标签页的潮汐里，记住一个人"
 date: 2026-11-25 21:49:32 +0800
 description: "让浏览器记住网址之上的那一层：你最近在忙什么、在意什么，以及你习惯怎样做事。关于 Phi Memory 的设计与取舍。"
 image: /assets/images/remembering-a-person-amid-tabs/memory-galaxy.png
+image_alt: "Memory Galaxy：以你为圆心的记忆关系图"
+image_width: 4680
+image_height: 2788
+image_type: image/png
 ---
 
 一个人在浏览器里度过的时间，大概比在任何别的软件里都多。查资料、比价、订机票、半夜读完一篇长文、和 AI 来回聊上十几轮，都发生在同一个窗口里。可到了第二天，浏览器记得的只有一串网址。它知道你打开过哪些页面，却不知道你那三个晚上其实都在为同一趟旅行做攻略，更不知道你为什么最后放弃了那家酒店。

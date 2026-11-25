@@ -2,6 +2,10 @@
 layout: default
 ---
 <article>
-  <header class="page-header"><h1>{{ page.title | escape }}</h1></header>
+  <header class="page-header share-header">
+    <h1>{{ page.title | escape }}</h1>
+    {% if page.date %}<p class="page-date">发布于 <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y-%m-%d %H:%M:%S' }}（UTC+8）</time></p>{% endif %}
+  </header>
+  <hr class="content-divider">
   <div class="prose">{{ content }}</div>
 </article>
