@@ -1,12 +1,11 @@
 ---
 layout: default
+title: 分享
 ---
-<header class="archive-header"><p class="eyebrow">WOOD / WRITING</p><h1>文章</h1><p>关于 AI、浏览器，以及一些想分享的事。</p></header>
-<section class="post-list" aria-label="文章列表">
-{% for post in site.posts %}
-  <article class="post-row">
-    <div class="post-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time><span>{{ post.category | escape }}</span></div>
-    <div><h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2><p>{{ post.description | escape }}</p><a class="read-link" href="{{ post.url | relative_url }}">阅读全文 <span aria-hidden="true">↗</span></a></div>
-  </article>
+<header class="page-header"><h1>分享</h1></header>
+<ul class="page-links" aria-label="分享页面">
+{% assign shared_pages = site.pages | where: 'layout', 'share' | sort: 'title' %}
+{% for shared_page in shared_pages %}
+  <li><a href="{{ shared_page.url | relative_url }}">{{ shared_page.title | escape }}</a></li>
 {% endfor %}
-</section>
+</ul>

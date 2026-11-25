@@ -1,11 +1,8 @@
 ---
-layout: post
+layout: share
 title: "如何在无数个标签页的潮汐里，记住一个人"
 date: 2026-11-25 21:49:32 +0800
-category: 人工智能
-tags: [AI, 浏览器, Phi Browser, Agent Memory]
 description: "让浏览器记住网址之上的那一层：你最近在忙什么、在意什么，以及你习惯怎样做事。关于 Phi Memory 的设计与取舍。"
-original_url: https://v2c.life/article/remembering-a-person-amid-tabs
 image: /assets/images/remembering-a-person-amid-tabs/memory-galaxy.png
 ---
 
