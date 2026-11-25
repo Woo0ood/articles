@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article>
+  <header class="article-header">
+    <a class="back-link" href="{{ '/' | relative_url }}">← 所有文章</a>
+    <div class="article-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y-%m-%d %H:%M:%S' }} +08:00</time><span>{{ page.category | escape }}</span></div>
+    <h1>{{ page.title | escape }}</h1>
+    {% if page.tags %}<ul class="tags" aria-label="文章标签">{% for tag in page.tags %}<li>{{ tag | escape }}</li>{% endfor %}</ul>{% endif %}
+  </header>
+  <div class="prose">{{ content }}</div>
+  {% if page.original_url %}<aside class="source-note">同文发布于 <a href="{{ page.original_url }}">v2c.life</a>。配图可点击查看原图。</aside>{% endif %}
+</article>
